@@ -1,0 +1,26 @@
+{application, erlyweb,
+    [{description, "ErlyWeb application"},
+     {vsn, "1.7.1"},
+     {modules,
+                [ erlyweb_compile
+                , erlyweb_controller
+                , erlyweb
+                , erlyweb_forms
+                , erlyweb_util
+                , erltl
+                , yaws_arg
+                , yaws_headers
+                , erlsql
+                , erlydb
+                , erlydb_base
+                , erlydb_field
+                , erlydb_mnesia
+                , erlydb_mysql
+                , erlydb_psql
+                , smerl
+        ]},
+     {registered, []},
+     {applications, [kernel,
+                     stdlib,
+                     compiler]},
+     {env, []}]}.
